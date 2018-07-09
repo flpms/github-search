@@ -1,15 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-search-page',
-  templateUrl: './search-page.component.html',
-  styleUrls: ['./search-page.component.css']
+  selector: 'gs-search',
+  templateUrl: './search.component.html',
+  styleUrls: ['./search.component.css']
 })
-export class SearchPageComponent implements OnInit {
+export class SearchComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router:Router
+  ) { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  public search(query:any):void {
+    this.router.navigate(['profile/', query]);
   }
 
 }
