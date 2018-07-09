@@ -8,6 +8,11 @@ import { catchError, map, tap } from 'rxjs/operators';
 export class UsersService {
 
   private host:string = 'https://api.github.com';
+  private auth: string = `Basic ${btoa('flpms:d658f3a65273570d7c61c3992151158990eb3560')}`;
+  private header: any = {
+    Authorization: this.auth,
+    Accept: 'application/vnd.github.v3+json'
+  }
 
   constructor(private http: HttpClient) { }
 
@@ -19,9 +24,7 @@ export class UsersService {
 
   public getUser(user:string) {
     return this.http.get(`${this.host}/users/${user}`, {
-      headers: {
-        Accept: 'application/vnd.github.v3+json'
-      }
+      headers: this.header
     }).pipe(
       tap((result) => { console.log(result) }),
       catchError(this.handleError('getUser'))
@@ -30,11 +33,9 @@ export class UsersService {
 
   public getRepos(user:string) {
     return this.http.get(`${this.host}/users/${user}/repos`, {
-      headers: {
-        Accept: 'application/vnd.github.v3+json'
-      }
+      headers: this.header
     }).pipe(
-      tap(() => {}),
+      tap((result) => {console.log(result)}),
       catchError(this.handleError('getRepos'))
     );
   }
