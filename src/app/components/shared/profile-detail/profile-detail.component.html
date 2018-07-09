@@ -1,3 +1,9 @@
-<p>
-  profile-detail works!
-</p>
+<img src={{user?.avatar_url}} class="user-avatar">
+
+<p>{{ user?.name }}</p>
+<p>{{ user?.login }}</p>
+<p></p>
+<p>{{ user?.location }}</p>
+<gs-stars [count]=user?.stars></gs-stars>
+<p>{{user?.public_repos}}</p>
+<p>{{user?.followers}}</p>
