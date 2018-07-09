@@ -1,16 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
-
 import { HeaderComponent } from './components/shared/header/header.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { SearchComponent } from './components/search/search.component';
 import { SearchBarComponent } from './components/shared/search-bar/search-bar.component';
 import { StarsComponent } from './components/shared/stars/stars.component';
+
+import { UsersService } from './services/users.service';
+
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -23,10 +25,11 @@ import { StarsComponent } from './components/shared/stars/stars.component';
     StarsComponent
   ],
   imports: [
-    AppRoutingModule,
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
