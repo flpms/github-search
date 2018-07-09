@@ -1,0 +1,36 @@
+:host { display: flex; }
+
+.search-input {
+  border: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  height: 50px;
+  padding-left: 17px;
+  width: 650px;
+}
+
+.search-button {
+  background-color: #ac53f2;
+  border: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+}
+
+.search-button::after {
+  content: '';
+  background-image: url('../../../../assets/search-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 30px;
+  margin-top: 6px;
+  width: 30px;
+}
+
+.search-button span { display: none; visibility: hidden; }

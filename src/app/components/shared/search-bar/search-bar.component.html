@@ -1,8 +1,10 @@
 <input #query
+        class="search-input"
         type="text"
         name="search"
         placeholder="Pesquisar"
         aria-label="Digite o usuário do github aqui"
         (keyup.enter)="search(query.value)"
         >
-<button (click)="search(query.value)">Pesquisar</button>
+
+<button (click)="search(query.value)" class="search-button"><span>Pesquisar</span></button>
