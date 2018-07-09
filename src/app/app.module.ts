@@ -3,12 +3,18 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { NotFoundComponent } from './components/not-found/not-found.component';
+
 import { SearchHeaderComponent } from './components/search-header/search-header.component';
+
+import { NotFoundComponent } from './components/not-found/not-found.component';
+
 import { ProfileComponent } from './components/profile/profile.component';
+
 import { SearchBarComponent } from './components/shared/search-bar/search-bar.component';
 import { StarsComponent } from './components/shared/stars/stars.component';
 import { LogoComponent } from './components/shared/logo/logo.component';
+
+import { RepoSummaryComponent } from './components/shared/repo-summary/repo-summary.component';
 import { ProfileDetailComponent } from './components/shared/profile-detail/profile-detail.component';
 
 import { UsersService } from './services/users.service';
@@ -24,7 +30,8 @@ import { AppRoutingModule } from './app-routing.module';
     SearchHeaderComponent,
     StarsComponent,
     ProfileDetailComponent,
-    LogoComponent
+    LogoComponent,
+    RepoSummaryComponent
   ],
   imports: [
     BrowserModule,
