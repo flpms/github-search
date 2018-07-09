@@ -1,9 +1,8 @@
 <img src={{user?.avatar_url}} class="user-avatar">
 
-<p>{{ user?.name }}</p>
-<p>{{ user?.login }}</p>
-<p></p>
-<p>{{ user?.location }}</p>
+<p class="user-name">{{ user?.name }}</p>
+<p class="user-login">{{ user?.login }}</p>
+<p class="icon user-location">{{ user?.location }}</p>
 <gs-stars [count]=user?.stars></gs-stars>
-<p>{{user?.public_repos}}</p>
-<p>{{user?.followers}}</p>
+<p class="icon user-repositories">{{user?.public_repos}}</p>
+<p class="icon user-followers">{{user?.followers}}</p>

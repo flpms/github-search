@@ -1,6 +1,44 @@
+:host {
+  color: #5c5c5c;
+}
+
 .user-avatar {
   width: 280px;
   height: 280px;
   border-radius: 2px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+.user-name {
+  color: #000;
+  font-size: 35px;
+  margin-top: 12px;
+}
+
+.user-login { margin-top: 7px; margin-bottom: 30px; }
+
+.icon { margin-top: 13px; }
+
+.icon::before {
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  display: inline-block;
+  height: 24px;
+  margin-right: 7px;
+  width: 24px;
+}
+
+.user-location::before {
+  background-image: url('../../../../assets/location-icon.svg');
+}
+
+.user-followers::before {
+  background-image: url('../../../../assets/followers-icon.svg');
+}
+
+.user-repositories::before {
+  background-image: url('../../../../assets/repositories-icon.svg');
 }

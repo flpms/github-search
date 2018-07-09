@@ -1,0 +1,13 @@
+.star-icon { margin-top: 13px; }
+
+.star-icon::before {
+  background-image: url('../../../../assets/star-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  display: inline-block;
+  height: 24px;
+  margin-right: 7px;
+  width: 24px;
+}
