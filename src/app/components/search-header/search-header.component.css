@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  height: 50px;
+  margin: 35px 25px;
+  width: 100%
+}
+
+.header-logo {
+  margin: 0 70px;
+  width: 280px;
+}

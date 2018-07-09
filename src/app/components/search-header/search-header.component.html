@@ -1,2 +1,6 @@
-<gs-logo (backToSearch)="goBack($event)"></gs-logo>
+<gs-logo
+  [logoType]="getLogoType()"
+  (backToSearch)="goBack($event)"
+  class="header-logo"></gs-logo>
+
 <gs-search-bar (query)="search($event)"></gs-search-bar>

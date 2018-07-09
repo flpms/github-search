@@ -32,4 +32,12 @@ export class SearchHeaderComponent implements OnInit {
   public goBack():void {
     !this.isSearchLayout && this.router.navigate(['search/']);
   }
+
+  public getLogoType():string {
+    if (this.isSearchLayout) {
+      return 'large';
+    }
+
+    return 'medium';
+  }
 }
