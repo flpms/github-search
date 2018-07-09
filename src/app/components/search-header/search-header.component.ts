@@ -4,7 +4,10 @@ import { Router, ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'gs-search-header',
   templateUrl: './search-header.component.html',
-  styleUrls: ['./search-header.component.css']
+  styleUrls: ['./search-header.component.css'],
+  host: {
+    '[class.search]': 'isSearchLayout'
+  }
 })
 export class SearchHeaderComponent implements OnInit {
 
@@ -30,10 +33,10 @@ export class SearchHeaderComponent implements OnInit {
   }
 
   public goBack():void {
-    !this.isSearchLayout && this.router.navigate(['search/']);
+    this.router.navigate(['search/']);
   }
 
-  public getLogoType():string {
+  get logoType():string {
     if (this.isSearchLayout) {
       return 'large';
     }

@@ -5,7 +5,15 @@
   width: 100%
 }
 
-.header-logo {
-  margin: 0 70px;
-  width: 280px;
+:host.search {
+  align-content: stretch;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  margin: 0 0;
 }
+
+:host.header-box .logo { margin: 0 70px; width: 280px; }
+
+.search.logo { width: 415px }
