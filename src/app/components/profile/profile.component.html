@@ -1,7 +1,11 @@
-<gs-search-header></gs-search-header>
+<gs-search-header class="header-box"></gs-search-header>
 
-<gs-profile-detail [user]=user></gs-profile-detail>
-
-<ng-template ngFor let-repo [ngForOf]="repos">
-  <gs-repo-summary [repo]=repo></gs-repo-summary>
+<ng-template [ngIf]=user>
+  <gs-profile-detail class="profile-box" [user]=user></gs-profile-detail>
 </ng-template>
+
+<div class="repo-box">
+  <ng-template ngFor let-repo [ngForOf]="repos">
+    <gs-repo-summary [repo]=repo></gs-repo-summary>
+  </ng-template>
+</div>
