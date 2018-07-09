@@ -95,7 +95,7 @@
     },
     "github-search-e2e": {
       "root": "",
-      "sourceRoot": "e2e",
+      "sourceRoot": "",
       "projectType": "application",
       "architect": {
         "e2e": {
@@ -109,7 +109,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "e2e/tsconfig.e2e.json"
+              "src/tsconfig.app.json"
             ],
             "exclude": [
               "**/node_modules/**"
