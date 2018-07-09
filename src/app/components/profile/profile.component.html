@@ -1,1 +1,7 @@
-<gs-search-header></gs-header>
+<gs-search-header></gs-search-header>
+
+<gs-profile-detail [user]=user></gs-profile-detail>
+
+<ng-template ngFor let-repo [ngForOf]="repos">
+  <gs-repo-summary [repo]=repo></gs-repo-summary>
+</ng-template>
