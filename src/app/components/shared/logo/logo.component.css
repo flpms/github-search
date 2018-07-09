@@ -1,0 +1,21 @@
+:host h1 {
+  font-family: monaco, 'Ubuntu Mono', Consolas, Lucida Console, monospace;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin-left: 10px;
+}
+
+.medium { width: 280px; }
+
+.medium, .medium .italic { font-size: 36px; }
+
+.italic {
+  font-family: Raleway;
+  font-weight: 200;
+  font-style: italic;
+  margin-left: -10px;
+}
+
+
+.large { font-size: 60px; }
+.large { font-size: 60px; }

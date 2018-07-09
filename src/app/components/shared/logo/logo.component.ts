@@ -6,7 +6,7 @@ import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./logo.component.css']
 })
 export class LogoComponent implements OnInit {
-
+  @Input() logoType:any;
   @Output() backToSearch = new EventEmitter<string>();
 
   constructor() { }
