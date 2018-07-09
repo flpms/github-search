@@ -1,11 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-stars',
+  selector: 'gs-stars',
   templateUrl: './stars.component.html',
   styleUrls: ['./stars.component.css']
 })
 export class StarsComponent implements OnInit {
+
+  @Input() count:number = 0;
 
   constructor() { }
 
