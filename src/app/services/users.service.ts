@@ -8,7 +8,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 export class UsersService {
 
   private host:string = 'https://api.github.com';
-  private auth: string = `Basic ${btoa('flpms:d658f3a65273570d7c61c3992151158990eb3560')}`;
+  private auth: string = `Basic ${btoa('flpms:4e1cc7ab42c5a0d81acc8f9bae9c43ed1ecad7b9')}`;
   private header: any = {
     Authorization: this.auth,
     Accept: 'application/vnd.github.v3+json'
