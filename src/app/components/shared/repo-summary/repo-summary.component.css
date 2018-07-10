@@ -1,6 +1,14 @@
+:host {
+  display: block;
+  height: auto;
+  margin-bottom: 30px;
+}
+
 .repo-name {
   height: 40.8px;
   font-family: Raleway;
   font-size: 1.5rem;
   color: #ac53f2;
 }
+
+.repo-description { max-width: 1048px; }
