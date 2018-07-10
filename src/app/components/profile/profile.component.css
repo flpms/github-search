@@ -3,9 +3,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-left: 200px;
+  width: 1024px;
 }
 
 .profile-box {
+  flex: 1;
   margin-left: 70px;
   width: 280px;
 }

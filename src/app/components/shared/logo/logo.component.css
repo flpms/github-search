@@ -1,4 +1,5 @@
 :host h1 {
+  cursor: pointer;
   font-family: monaco, 'Ubuntu Mono', Consolas, Lucida Console, monospace;
   font-weight: 400;
   letter-spacing: 4px;
