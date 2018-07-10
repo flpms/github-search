@@ -20,24 +20,22 @@ export class ProfileComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    let name = this.route.snapshot.paramMap.get('username');
-    this.getUser(name);
+    this.route.params.subscribe(params => this.getUser(params.username));
   }
 
-  private getUser(name:string):void {
-    this.usersService
-      .getUser(name)
-      .subscribe((result:any) => {
-        if (!result) {
-          return this.router.navigate(['not-found/', name]);
-        }
+  private getUser(name:string) {
+    console.log('consulting', name);
+    this.usersService.getUser(name).subscribe((result:any) => {
+      if (!result) {
+        return this.router.navigate(['not-found/', name]);
+      }
 
-        this.user = result;
-        this.getUserRepos(name);
-      });
+      this.user = result;
+      this.getUserRepos(name);
+    });
   }
 
-  private getUserRepos(username:string):void {
+  private getUserRepos(username:string) {
     this.usersService
         .getRepos(username)
         .subscribe((result) => {
