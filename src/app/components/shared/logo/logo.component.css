@@ -5,17 +5,15 @@
   margin-left: 10px;
 }
 
-.medium { width: 280px; }
-
-.medium, .medium .italic { font-size: 36px; }
-
 .italic {
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-weight: 200;
   font-style: italic;
   margin-left: -10px;
 }
 
+.medium { width: 280px; }
 
-.large { font-size: 60px; }
-.large { font-size: 60px; }
+.medium, .medium .italic { font-size: 36px; }
+
+.large, .large .italic { font-size: 60px; }
