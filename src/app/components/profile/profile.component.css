@@ -3,19 +3,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: 200px;
-  width: 1024px;
+  margin: 0 auto;
+  width: 1190px;;
 }
 
-.profile-box {
-  flex: 1;
-  margin-left: 70px;
-  width: 280px;
-}
+.profile-box { width: 280px; }
 
 .repos-box {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  width: 600px;
+  margin-left: 70px;
+  width: 840px;
 }
