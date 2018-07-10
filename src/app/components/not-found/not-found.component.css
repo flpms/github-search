@@ -1,0 +1,7 @@
+.message {
+  color: #ac53f2;
+  display: flex;
+  font-size: 35px;
+  justify-content: center;
+  margin-top: 125px;
+}
