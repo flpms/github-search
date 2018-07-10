@@ -1,4 +1,4 @@
-.star-icon { margin-top: 13px; }
+.star-icon { color: #5c5c5c; margin-top: 13px; }
 
 .star-icon::before {
   background-image: url('../../../../assets/star-icon.svg');
