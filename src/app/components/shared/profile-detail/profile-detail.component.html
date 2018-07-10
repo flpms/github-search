@@ -1,8 +1,12 @@
 <img src={{user?.avatar_url}} class="user-avatar">
 
-<p class="user-name">{{ user?.name }}</p>
-<p class="user-login">{{ user?.login }}</p>
-<p class="icon user-location">{{ user?.location }}</p>
-<gs-stars [count]=user?.stars></gs-stars>
-<p class="icon user-repositories">{{user?.public_repos}}</p>
-<p class="icon user-followers">{{user?.followers}}</p>
+<p class="user-name" *ngIf="user.name">{{ user?.name }}</p>
+<p class="user-login" *ngIf="user.login">{{ user?.login }}</p>
+
+<p class="icon user-organization" *ngIf="user.company">{{ user?.company }}</p>
+<p class="icon user-location" *ngIf="user.location">{{ user?.location }}</p>
+
+<gs-stars [count]=user?.stars *ngIf="user.stars"></gs-stars>
+
+<p class="icon user-repositories" *ngIf="user.public_repos">{{user?.public_repos}}</p>
+<p class="icon user-followers" *ngIf="user.followers">{{user?.followers}}</p>

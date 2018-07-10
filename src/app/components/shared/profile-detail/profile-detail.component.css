@@ -31,14 +31,10 @@
   width: 24px;
 }
 
-.user-location::before {
-  background-image: url('../../../../assets/location-icon.svg');
-}
+.user-organization::before { background-image: url('../../../../assets/organization-icon.svg'); }
 
-.user-followers::before {
-  background-image: url('../../../../assets/followers-icon.svg');
-}
+.user-location::before { background-image: url('../../../../assets/location-icon.svg'); }
 
-.user-repositories::before {
-  background-image: url('../../../../assets/repositories-icon.svg');
-}
+.user-followers::before { background-image: url('../../../../assets/followers-icon.svg'); }
+
+.user-repositories::before { background-image: url('../../../../assets/repositories-icon.svg'); }
