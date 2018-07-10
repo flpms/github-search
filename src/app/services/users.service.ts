@@ -26,7 +26,6 @@ export class UsersService {
     return this.http.get(`${this.host}/users/${user}`, {
       headers: this.header
     }).pipe(
-      tap((result) => { console.log(result) }),
       catchError(this.handleError('getUser'))
     );
   }
@@ -35,7 +34,6 @@ export class UsersService {
     return this.http.get(`${this.host}/users/${user}/repos`, {
       headers: this.header
     }).pipe(
-      tap((result) => {console.log(result)}),
       catchError(this.handleError('getRepos'))
     );
   }
