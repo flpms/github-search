@@ -10,7 +10,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build && npm run check-build-folder",
+    "check-build-folder": "ls -la"
   },
   "private": true,
   "engines": {
